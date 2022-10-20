@@ -6,13 +6,19 @@
 
 <input type="text" id="name" name="name" required
        minlength="4" size="20">
+<input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
 
   <script>
-    var myInput = document.getElementById("name");
-    if (myInput && myInput.value === "heisenberg") {
-           location.replace("https://illegalradish.github.io/chat/")
-      alert("My input has a value!");
-    }
+    document.getElementById("clickMe").onclick = function () {
+           
+           var myInput = document.getElementById("name");
+           if (myInput && myInput.value === "heisenberg") {
+                  location.replace("https://illegalradish.github.io/chat/")
+             alert("My input has a value!");
+           }
+    
+    };
+    
    </script>
 </body>
   
