@@ -6,10 +6,9 @@
 
 <input type="text" id="name" name="name" required
        minlength="4" size="20">
-<input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
-
+<button onclick="myFunction()">Click me</button>
   <script>
-    document.getElementById("clickMe").onclick = function () {
+    function myFunction () {
            
            var myInput = document.getElementById("name");
            if (myInput && myInput.value === "heisenberg") {
@@ -17,7 +16,7 @@
              alert("My input has a value!");
            }
     
-    };
+    }
     
    </script>
 </body>
