@@ -2,15 +2,18 @@
 <html>
 <body>
 
-<h1>Display a Password Field</h1>
+<h1>Say my name...</h1>
 
-<form action="/action_page.php">
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <label for="pwd">Password:</label>
-  <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
-  <input type="submit">
-</form>
+<input type="text" id="name" name="name" required
+       minlength="4" size="20">
+
 
 </body>
+  
+  <script>
+    var myInput = document.getElementById("name");
+    if (myInput && myInput.value === "heisenberg") {
+      alert("My input has a value!");
+    }
+    </script>
 </html>
