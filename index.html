@@ -6,21 +6,15 @@
 <input type="text" id="name" name="name" required
        minlength="4" size="20">
 
-<button onclick="myFunction()">Click me</button>
-  <script>
-    document.getElementById("clickMe").onclick = function () {
-    function myFunction () {
+<p>Hit da </p><p id="demo" onclick="myFunction()">griddy.</p>
 
-           var myInput = document.getElementById("name");
-           if (myInput && myInput.value === "heisenberg") {
-                  location.replace("https://illegalradish.github.io/Chat/")
-             alert("My input has a value!");
-           }
-
-    };
-    }
-
-   </script>
+<script>
+       function myFunction() {
+              if(document. getElementById("name"). value === "heisenberg")
+              window.location='https://illegalradish.github.io/Chat/'
+              alert("your gawshdawn right");
+       }
+</script>
 </body>
   
   
